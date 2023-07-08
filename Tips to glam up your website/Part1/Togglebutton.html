@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Toggle Button By Krusenix</title>
+		<link rel="stylesheet" href="Togglebutton.css" />
+	</head>
+
+	<body class="dark-mode">
+		<div class="wrapper">
+			<h1 id="heading">Dark Mode</h1>
+			<input type="checkbox" id="hide-checkbox" />
+			<label for="hide-checkbox" class="toggle">
+				<span class="toggle-button">
+					<span class="crater crater-1"></span>
+					<span class="crater crater-2"></span>
+					<span class="crater crater-3"></span>
+					<span class="crater crater-4"></span>
+					<span class="crater crater-5"></span>
+					<span class="crater crater-6"></span>
+					<span class="crater crater-7"></span>
+				</span>
+				<span class="star star-1"></span>
+				<span class="star star-2"></span>
+				<span class="star star-13"></span>
+				<span class="star star-3"></span>
+				<span class="star star-4"></span>
+				<span class="star star-5"></span>
+				<span class="star star-6"></span>
+				<span class="star star-7"></span>
+				<span class="star star-8"></span>
+				<span class="star star-9"></span>
+				<span class="star star-13"></span>
+				<span class="star star-10"></span>
+				<span class="star star-11"></span>
+				<span class="star star-12"></span>
+			</label>
+		</div>
+	</body>
+
+	<script>
+
+		const button = document.getElementById('hide-checkbox')
+		const text = document.getElementById('heading')
+
+		button.addEventListener('change' , function(){
+
+			if(button.checked)
+			{
+				document.body.classList.remove('dark-mode')
+				document.body.classList.add('light-mode')
+				heading.innerHTML = "Light Mode"
+			}
+			else{
+				document.body.classList.add('dark-mode')
+				document.body.classList.remove('light-mode')
+				heading.innerHTML = "Dark Mode"
+			}
+		})
+		
+	</script>
+
+</html>
